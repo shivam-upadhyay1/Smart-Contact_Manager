@@ -6,3 +6,6 @@ FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/contact_management-0.0.1-SNAPSHOT.jar contact_management.jar
 EXPOSE 8282
 ENTRYPOINT ["java","-jar","contact_management.jar"]
+
+
+
